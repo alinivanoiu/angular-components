@@ -1,0 +1,18 @@
+<app-divider>Table Component</app-divider>
+<app-table [data]="data" [headers]="headers" class="striped celled"></app-table>
+<app-tabs>
+  <a
+    routerLink="./"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="item"
+    routerLinkActive="active"
+  >
+    Biography
+  </a>
+  <a routerLink="./companies" class="item" routerLinkActive="active">
+    Companies
+  </a>
+  <a routerLink="./partners" class="item" routerLinkActive="active">
+    Partners
+  </a>
+</app-tabs>
